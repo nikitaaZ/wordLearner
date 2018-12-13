@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: sans-serif;
+}
+body{
+	background: #4CCEB2; /* Для браузеров, которые не поддерживают градиенты */
+	 background: -webkit-radial-gradient(#4CCEB2, #2F8FD8); /* Для Opera 11.1 - 12.0 */
+	 background: -o-radial-gradient(#4CCEB2, #2F8FD8); /* Для Opera 11.1 - 12.0 */
+	 background: -moz-radial-gradient(#4CCEB2, #2F8FD8); /* Для Firefox 3.6 - 15 */
+	 background: radial-gradient(#4CCEB2, #2F8FD8); /* Стандартный синтаксис */
+}
+
+input {outline:none;}
+
+.vertical-scrolling h1{
+	font-size: 5rem;
+	font-weight: 400;
+	position: absolute;
+	top: 5vh;
+	left: 35vw;
+}
+.vertical-scrolling{
+	text-align: center;
+}
+
+.current-word{
+	top: 30vw;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.current-word-input, .word-submit-button{
+	color: black;
+}
+
+.current-word-input{
+	margin-top: 20vh;
+	font-size: 2rem;
+	width: 70vw;
+	background: none;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+.word-submit-button{
+	font-size: 1.6rem;
+	
+}
+
+
+.btn{
+	color: white;
+	padding: 5px 10px;
+	border: 1px solid #3f51b5;
+	background: none;
+	font-size: 2rem;
+}
+
+.btn:hover{
+	background: #3f51b5;
+	color: black;
+}
+
+.start-button{
+	font-size: 3rem;
+}
+
+
+.word-submit-button, .current-word-input, .newWord{
+	display: none;
+}
+
+.down-arrow{
+	position: absolute;
+	bottom: 0;
+	left: 47vw;
+}
+
+.slov{
+	position: absolute;
+	font-size: 1.5rem;
+	bottom: 80px;
+	left: 46.9vw;
+}
+
+.up-arrow{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 0;
+	left: 46.9vw;
+}
+
+.add-button{
+	font-size: 1.5rem;
+}
+
+.new-word-input, .new-translate-input{
+	font-size: 1.7rem;
+	color: black;
+}
+
+ul{
+	text-align: center;
+	height: 65vh;
+	overflow: scroll;
+}
+
+li{
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+}
+
+.addworrr{
+	padding-top: 10vh;
+}
+
+.delcross{
+	display: block;
+	width: 30px;
+	height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+	.vertical-scrolling h1{
+		font-size: 3rem;
+		left: 18vw;
+	}
+	
+	.down-arrow{
+		left: 40vw;
+	}
+
+	.word-submit-button{
+		margin-top: 1vh;
+		font-size: 1.6rem
+	}	
+	.slov{
+		left: 40vw;
+	}
+	.start-button{
+		font-size: 2.2rem;
+	}
+	.addworrr{
+		padding-top: 10vh;
+		font-size: 3rem;
+	}
+	.up-arrow{
+		left: 40vw;
+	}
+	.new-word-input, .new-translate-input{
+		font-size: 1rem;
+		padding: 10px 5px;
+	}
+	.add-button{
+		margin-top: 1vh;
+		font-size: 1.2rem;
+	}
+	ul{
+		height: 40vh;
+	}
+	.DelWords {
+		font-size: 1.4rem;
+	}
+}

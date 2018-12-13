@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--	<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+	<meta charset="UTF-8">
+	<title>WordLearner</title>
+	<link rel="icon" type="image/png" href="1.png" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="fullpage">
+		<section class="vertical-scrolling">
+			<h1>WordLearner</h1>
+			<button class="start-button btn">Старт</button>
+			<p class="current-word "></p>
+			<button class="btn newWord">Другое</button>
+			<input type="text" class="current-word-input">
+			<button class="word-submit-button btn">Подтвердить</button>
+			<p class="slov">Словарь</p>
+			<img src="ic_keyboard_arrow_down_black_48dp.png" alt="Стрелка вниз" class="down-arrow">
+		</section>
+		<section class="vertical-scrolling">
+		<img src="ic_keyboard_arrow_down_black_48dp.png" alt="" class="up-arrow">
+		<h2 class="addworrr">Добавить слово:</h2>
+		<input type="text" required class="new-word-input"> &#8212 <input type="text" required class="new-translate-input">
+		<button class="btn add-button">Добавить</button>
+		<h2>Словарь:</h2>
+			<ul class="dictionary">
+				
+			</ul>
+			<button class="btn DelWords">Сбросить словарь</button>
+		</section>
+	</div>
+	<script src="app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+	<script>
+		$('#fullpage').fullpage({
+			sectionSelector: '.vertical-scrolling',
+			// другие опции
+		});
+
+	</script>
+</body>
+
+</html>
